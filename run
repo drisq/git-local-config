@@ -1,0 +1,15 @@
+#!/bin/bash
+
+NAME=drisq
+EMAIL=kiel.legaspi.jose@gmail.com
+
+git_local_config() {
+    git init 
+    git config user.name $NAME
+    git config user.email $EMAIL
+}
+
+if [ ! -d $PWD/.git ] 
+then 
+    git_local_config
+fi
